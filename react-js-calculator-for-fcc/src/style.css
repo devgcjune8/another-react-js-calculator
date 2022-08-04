@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+* {
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  font-family: 'Zen Dots', cursive;
+  font-size: 45px;
+}
+body {
+  background: #acddfc;
+}
+.app {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 5px double #327ba8;
+}
+button {
+  cursor: pointer;
+  border: 1px solid black;
+ 
+}
+.calc {
+  width: 500px;
+  display: grid;
+  grid-template-rows: 0.35fr 1fr;
+  margin: 3% auto;
+  border: 10px inset #1b628f;
+}
+
+.output {
+  width: 100%;
+  overflow: hidden;
+  text-align: right;
+  background: black;
+  color: white;
+  height:100%;
+  
+}
+.result {
+  color: #97f0e1
+}
+.input {
+  color: #00fad0
+}
+#equals {
+  grid-column: 1 / -1;
+}
+#equals:hover {
+  background: #000057;
+  color: white;
+}
+#clear:hover {
+  background: #730000;
+  color: white;
+}
+#add:hover, #subtract:hover, #multiply:hover, #divide:hover {
+  background: #025161;
+  color: white;
+}
+#decimal:hover {
+  background: #ff00dd;
+  color: white;
+}
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #zero:hover {
+  background: #005eff;
+  color: white;
+}
